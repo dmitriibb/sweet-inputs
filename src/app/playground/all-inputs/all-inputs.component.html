@@ -1,0 +1,6 @@
+<div>
+  <div class="tabClickable" *ngFor="let tab of tabs" (click)="tabClick(tab.value)">{{tab.label}}</div>
+</div>
+<div *ngIf="currentTab === keyboardTab">
+  <si-test-keyboard></si-test-keyboard>
+</div>

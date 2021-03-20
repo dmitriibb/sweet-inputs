@@ -6,6 +6,7 @@ import { KeyBtnComponent } from './inputs/keyboard/components/key-btn/key-btn.co
 import { KeyLineComponent } from './inputs/keyboard/components/key-line/key-line.component';
 import { KeyboardComponent } from './inputs/keyboard/components/keyboard/keyboard.component';
 import { TestKeyboardComponent } from './playground/test-keyboard/test-keyboard.component';
+import { AllInputsComponent } from './playground/all-inputs/all-inputs.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TestKeyboardComponent } from './playground/test-keyboard/test-keyboard.
     KeyBtnComponent,
     KeyLineComponent,
     KeyboardComponent,
-    TestKeyboardComponent
+    TestKeyboardComponent,
+    AllInputsComponent
   ],
   imports: [
     BrowserModule

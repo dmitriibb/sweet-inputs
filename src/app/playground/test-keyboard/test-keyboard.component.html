@@ -1,0 +1,14 @@
+<h3>test-keyboard works</h3>
+
+<div>
+  <div>
+    <input type="text" [value]="input">
+  </div>
+
+
+  <si-keyboard (symbolClickKeyboard)="symbolClickKeyboard($event)"
+               (backSpaceClick)="backSpaceClick()"
+               (clearClickKeyboard)="clearClickKeyboard()"
+  ></si-keyboard>
+
+</div>

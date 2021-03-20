@@ -1,0 +1,19 @@
+<div class="keyBoard">
+  <div class="commonLines">
+    <ng-container *ngFor="let line of lines">
+      <si-key-line
+        [symbols]="line"
+        (symbolClickLine)="symbolClickLine($event)"
+      ></si-key-line>
+    </ng-container>
+  </div>
+  <div class="commandLine">
+    <si-key-line
+      [symbols]="commandLine"
+      (symbolClickLine)="commandClickLine($event)"
+    ></si-key-line>
+  </div>
+  <br>
+  <button (click)="clearClick($event)">Clear</button>
+
+</div>

@@ -1,0 +1,9 @@
+<div>
+  <ng-container *ngFor="let symbol of symbols">
+    <si-key-btn
+      [symbol]=symbol
+      (symbolClick)="symbolClick($event)"
+    >
+    </si-key-btn>
+  </ng-container>
+</div>

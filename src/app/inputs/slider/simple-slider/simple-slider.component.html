@@ -1,0 +1,9 @@
+<div #slider class="slider"
+     (mousemove)="mousemove($event)">
+  <div class="rail"></div>
+  <div class="cursor"
+       [style.margin-left]="cursorMarginLeft"
+       (mousedown)="grabCursor()"
+       (mouseup)="releaseCursor()"
+  ></div>
+</div>

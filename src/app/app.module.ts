@@ -7,6 +7,9 @@ import { KeyLineComponent } from './inputs/keyboard/components/key-line/key-line
 import { KeyboardComponent } from './inputs/keyboard/components/keyboard/keyboard.component';
 import { TestKeyboardComponent } from './playground/test-keyboard/test-keyboard.component';
 import { AllInputsComponent } from './playground/all-inputs/all-inputs.component';
+import { SimpleSliderComponent } from './inputs/slider/simple-slider/simple-slider.component';
+import { TestSlidersComponent } from './playground/test-sliders/test-sliders.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import { AllInputsComponent } from './playground/all-inputs/all-inputs.component
     KeyLineComponent,
     KeyboardComponent,
     TestKeyboardComponent,
-    AllInputsComponent
+    AllInputsComponent,
+    SimpleSliderComponent,
+    TestSlidersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

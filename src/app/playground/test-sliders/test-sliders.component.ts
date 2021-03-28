@@ -9,7 +9,13 @@ export class TestSlidersComponent implements OnInit {
 
   constructor() { }
 
+  value = 25;
+
   ngOnInit(): void {
+  }
+
+  sliderValueChanged(event) {
+    this.value = event;
   }
 
 }

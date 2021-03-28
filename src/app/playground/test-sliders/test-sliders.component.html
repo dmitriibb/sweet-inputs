@@ -1,4 +1,7 @@
 <p>test-sliders</p>
 <div>
-  <si-simple-slider></si-simple-slider>
+  <div style="display: inline-block; width: 500px" >{{value}}</div>
+  <div style="display: inline-block; width: 500px">
+    <si-simple-slider (onValueChanged)="sliderValueChanged($event)"></si-simple-slider>
+  </div>
 </div>

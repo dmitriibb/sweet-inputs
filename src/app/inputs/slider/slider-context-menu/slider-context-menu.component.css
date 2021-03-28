@@ -1,0 +1,12 @@
+.slider-context-menu {
+  width: 100px;
+}
+.slider-context-menu-option {
+  border: black 1px solid;
+  background-color: beige;
+  width: 100%;
+}
+.slider-context-menu-option:hover {
+  cursor: pointer;
+  background-color: dimgray;
+}

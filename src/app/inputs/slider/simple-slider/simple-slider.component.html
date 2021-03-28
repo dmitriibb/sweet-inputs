@@ -1,9 +1,21 @@
-<div #slider class="slider"
-     (mousemove)="mousemove($event)">
-  <div class="rail"></div>
-  <div class="cursor"
-       [style.margin-left]="cursorMarginLeft"
-       (mousedown)="grabCursor()"
-       (mouseup)="releaseCursor()"
-  ></div>
+<div class="slider-wrapper">
+
+  <div *ngIf="displayMin" class="slider-border-min">{{min}}</div>
+
+  <div #sliderContainer class="slider-container">
+    <div class="rail"></div>
+    <div *ngFor="let currCursor of values" class="cursor-position"
+         [style.margin-left]="currCursor.positionPercent">
+      <div class="cursor-icon"
+           (mousedown)="onCursorMouseDown($event, currCursor.id)"
+           (contextmenu)="onCursorContextMenu($event)">
+      </div>
+      <si-slider-context-menu *ngIf="currCursor.displayContextMenu"
+                              (optionSelected)="contextOptionSelected($event, currCursor.id)">
+      </si-slider-context-menu>
+    </div>
+  </div>
+
+  <div *ngIf="displayMax" class="slider-border-max">{{max}}</div>
+
 </div>

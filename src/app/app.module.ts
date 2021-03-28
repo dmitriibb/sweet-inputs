@@ -10,6 +10,7 @@ import { AllInputsComponent } from './playground/all-inputs/all-inputs.component
 import { SimpleSliderComponent } from './inputs/slider/simple-slider/simple-slider.component';
 import { TestSlidersComponent } from './playground/test-sliders/test-sliders.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { SliderContextMenuComponent } from './inputs/slider/slider-context-menu/slider-context-menu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     TestKeyboardComponent,
     AllInputsComponent,
     SimpleSliderComponent,
-    TestSlidersComponent
+    TestSlidersComponent,
+    SliderContextMenuComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,9 @@
 
   <div #sliderContainer class="slider-container">
     <div class="rail"></div>
+    <div *ngIf="sliderType === 'range'" class="rail-range"
+         [style.margin-left]="rangeLeftPositionPx"
+         [style.width]="rangeWidthPx"></div>
     <div *ngFor="let currCursor of values" class="cursor-position"
          [style.margin-left]="currCursor.positionPercent">
       <div class="cursor-icon"

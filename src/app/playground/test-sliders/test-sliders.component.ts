@@ -11,11 +11,25 @@ export class TestSlidersComponent implements OnInit {
 
   value = 25;
 
+  multiValues = [];
+
+  rangeFrom = 50;
+  rangeTo = 70
+
   ngOnInit(): void {
   }
 
   sliderValueChanged(event) {
     this.value = event;
+  }
+
+  sliderValuesChangedMulti(event) {
+    this.multiValues = event;
+  }
+
+  sliderValuesChangedRange(event) {
+    this.rangeFrom = event[0];
+    this.rangeTo = event[1];
   }
 
 }
